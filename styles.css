@@ -1,0 +1,10 @@
+.background-image {
+    background-image: url('assets/fondo4.jpeg'); /* Ruta a tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
+
+body{
+    background-color: black !important;
+}
