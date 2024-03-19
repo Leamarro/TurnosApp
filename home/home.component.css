@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.servicios{
+    display: flex;
+    justify-content: center;
+}
+.rutas{
+    font-family: serif;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+
+.boton-agregar {
+  font-family: serif;
+    border: 2px solid white; /* Borde negro */
+    background-color: transparent; /* Fondo transparente */
+    color: #000; /* Color del texto */
+    padding: 10px 20px; /* Ajustar el espacio interno */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .reserva-btn{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    padding: 5px;
+  }
+
+  .nombre {
+    font-family: serif;
+    display: flex;
+    font-weight: normal;
+    flex-direction: column; /* Mostrar los elementos en columna */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 35vh;
+    position: relative; /* Establecer posición relativa para alinear los pseudoelementos */
+  }
+  
+  .nombre h3 {
+    position: relative; /* Establecer posición relativa para que los pseudoelementos sean relativos a este elemento */
+  }
+  
+  .nombre h3::before,
+  .nombre h3::after {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Establecer posición absoluta */
+    top: 50%; /* Alinear en la mitad verticalmente */
+    width: 8%; /* Ancho del pseudoelemento */
+    height: 3px; /* Altura de la línea */
+    background-color: white; /* Color de la línea */
+  }
+  
+  .nombre h3::before {
+    left: -9.5%; /* Alinear al lado izquierdo */
+  }
+  
+  .nombre h3::after {
+    right: -9.5%; /* Alinear al lado derecho */
+  }
+  
+
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height:5vh; /* Establecer altura del contenedor al 100% del viewport */
+}
+
+.material-symbols-outlined{
+  color: #fff;
+}
