@@ -1,25 +1,40 @@
-.titulos{
-    margin-top: 15px;
-}
-
-.titulos h2 {
-    position: relative; /* Establecer posición relativa para que los pseudoelementos sean relativos a este elemento */
+.container {
+    display: flex;
+    flex-direction: column; /* Establecer la dirección del contenedor como columna */
+    height: 100%;
   }
 
-.titulos h2::before,
-.titulos h2::after {
-  content: ''; /* Contenido vacío */
-  position: absolute; /* Establecer posición absoluta */
-  top: 50%; /* Alinear en la mitad verticalmente */
-  width: 8%; /* Ancho del pseudoelemento */
-  height: 3px; /* Altura de la línea */
-  background-color: white; /* Color de la línea */
-}
-
-.titulos h2::before {
-  left: -9.5%; /* Alinear al lado izquierdo */
-}
-
-.titulos h2::after {
-  right: -9.5%; /* Alinear al lado derecho */
+  .half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .half h1 {
+    position: relative;
+  }
+  
+  .half h1::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -10px; /* Colocar la línea debajo del título */
+    left: 50%; /* Alinear el centro de la línea con el centro del título */
+    transform: translateX(-50%); /* Mover la línea hacia la izquierda en la mitad de su ancho */
+    width: 80%; /* Ancho de la línea */
+    height: 1px; /* Altura de la línea */
+    background-color: #fff; /* Color de la línea */
+  }
+  .options {
+    margin-top: 20px; /* Espacio superior para separar de título */
+    display: flex;
+    flex-direction: column; /* Alinear los checkboxes en una columna */
+    align-items: flex-start; /* Alinear los checkboxes a la izquierda */
+  }
+  
+  .form-check {
+    margin-bottom: 10px; /* Espacio inferior entre checkboxes */
+  }
+  
+.title {
+  margin-bottom: 20px; /* Espacio inferior para separar los checkboxes del título */
 }
