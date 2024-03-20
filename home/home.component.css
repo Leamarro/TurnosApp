@@ -5,16 +5,16 @@
     justify-content: center;
 }
 .rutas{
-    font-family: serif;
+    font-family: "Amatic SC", sans-serif;
     margin-top: 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 26px;
     color: white;
     padding: 5px;
 }
 
 .boton-agregar {
-  font-family: serif;
+    font-family: "Amatic SC", sans-serif;
     border: 2px solid white; /* Borde negro */
     background-color: transparent; /* Fondo transparente */
     color: #000; /* Color del texto */
@@ -25,14 +25,14 @@
   
   .reserva-btn{
     text-decoration: none;
-    font-size: 20px;
-    font-family: sans-serif;
+    font-size: 30px;
+    font-family: "Amatic SC", sans-serif;
     color: white;
     padding: 5px;
   }
 
   .nombre {
-    font-family: serif;
+    font-family: "Amatic SC", sans-serif;
     display: flex;
     font-weight: normal;
     flex-direction: column; /* Mostrar los elementos en columna */
@@ -44,8 +44,14 @@
   
   .nombre h3 {
     position: relative; /* Establecer posición relativa para que los pseudoelementos sean relativos a este elemento */
+    font-size: 30px;
+  }
+
+  .nombre h1 {
+    font-size: 50px;
   }
   
+
   .nombre h3::before,
   .nombre h3::after {
     content: ''; /* Contenido vacío */

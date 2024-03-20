@@ -1,10 +1,22 @@
 .background-image {
-    background-image: url('assets/fondo4.jpeg'); /* Ruta a tu imagen */
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Ajusta la altura según tus necesidades */
-  }
+  position: relative;
+  background-image: url('assets/fondo4.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 
-body{
-    background-color: black !important;
+.background-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+}
+
+.router-outlet-wrapper {
+  position: relative; /* Añadir posición relativa */
+  z-index: 1; /* Asegurarse de que el contenido se superponga sobre el pseudo-elemento */
 }
