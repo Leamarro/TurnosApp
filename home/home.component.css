@@ -21,7 +21,7 @@
     border: 3.5px solid white;
     background-color: transparent; /* Fondo transparente */
     color: #000; /* Color del texto */
-    padding: 10px 20px; /* Ajustar el espacio interno */
+    padding: 5px 15px;
     font-size: 16px; /* Tamaño del texto */
     border-radius: 4px; /* Bordes redondeados */
   }
@@ -50,10 +50,12 @@
   .nombre h3 {
     position: relative; /* Establecer posición relativa para que los pseudoelementos sean relativos a este elemento */
     font-size: 30px;
+    font-weight: bold;
   }
 
   .nombre h1 {
     font-size: 50px;
+    font-weight: bold;
   }
   
 
