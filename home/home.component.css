@@ -3,9 +3,11 @@
 .servicios{
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
 }
 .rutas{
     font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
     margin-top: 20px;
     text-decoration: none;
     font-size: 26px;
@@ -15,24 +17,27 @@
 
 .boton-agregar {
     font-family: "Amatic SC", sans-serif;
-    border: 2px solid white; /* Borde negro */
+    font-weight: bold;
+    border: 3.5px solid white;
     background-color: transparent; /* Fondo transparente */
     color: #000; /* Color del texto */
     padding: 10px 20px; /* Ajustar el espacio interno */
     font-size: 16px; /* Tamaño del texto */
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 4px; /* Bordes redondeados */
   }
   
   .reserva-btn{
     text-decoration: none;
     font-size: 30px;
     font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
     color: white;
     padding: 5px;
   }
 
   .nombre {
     font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
     display: flex;
     font-weight: normal;
     flex-direction: column; /* Mostrar los elementos en columna */

@@ -15,15 +15,22 @@
   .half h1 {
     font-size: 30px;
     position: relative;
+    font-weight: bold;
   }
   
+  .half h3 {
+    font-size: 30px;
+    position: relative;
+    font-weight: bold;
+  }
+
   .half h1::after {
     content: ''; 
     position: absolute; 
     bottom: -10px; /* Colocar la línea debajo del título */
-    left: 10%; /* Alinear el centro de la línea con el centro del título */
+    left: 9%; /* Alinear el centro de la línea con el centro del título */
     transform: translateX(-50%); /* Mover la línea hacia la izquierda en la mitad de su ancho */
-    width: 20%; /* Ancho de la línea */
+    width: 17%; /* Ancho de la línea */
     height: 2px; /* Altura de la línea */
     background-color: #fff; /* Color de la línea */
   }
@@ -47,6 +54,7 @@ img {
 .imagenes {
     display: flex;
     justify-content: space-between;
+    margin-left: 3%;
     width: 80%;
     margin-top: 15px;
   }
@@ -61,19 +69,21 @@ img {
 
 .boton-agregar {
   font-family: "Amatic SC", sans-serif;
-  border: 2px solid white;
+  border: 3.5px solid white;
   background-color: transparent;
   color: #000;
   padding: 5px 15px;
   font-size: 16px;
   border-radius: 5px;
   margin-top: 25%;
+  font-weight: bold;
 }
 
 .reserva-btn{
   text-decoration: none;
   font-size: 30px;
   font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
   color: white;
   padding: 5px;
 }
@@ -84,8 +94,19 @@ img {
 
 .form-check-label{
   font-family: "Amatic SC", sans-serif;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 .flecha-atras{
   margin-top: 5%;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  margin-right: 10px; /* Espacio entre el input y el label */
 }
