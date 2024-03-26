@@ -1,0 +1,37 @@
+<router-outlet></router-outlet>
+<div class="container">
+    <a class="flecha-atras" routerLink="/turnos">
+        <span class="material-symbols-outlined">
+            arrow_back
+        </span>
+    </a>
+    <div class="half" style="margin-top: 10%;">
+        <h1 style="color: white; margin-bottom: 5px; margin-top:2px;">TURNOS</h1>
+        <div class="imagenes">
+            <img src="../assets/tijeras.svg" alt="">
+            <img src="../assets/barba.svg" alt="">
+            <img src="../assets/peinado.svg" alt="">
+            <img src="../assets/maquinilla-de-afeitar.svg" alt="">
+            <img src="../assets/broche-del-pelo.svg" alt="">
+        </div>
+    </div>
+    <div style="margin-top: 5%;" class="half">
+        <form (ngSubmit)="submitForm()">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre"  required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="text" class="form-control" id="telefono" name="telefono"  required>
+            </div>
+          </form>
+        
+    </div>
+    <div class="contenedor">
+        <button class="boton-agregar">
+            <span class="material-symbols-outlined">arrow_right_alt</span>
+            <a class="reserva-btn" routerLink="/datos">CONFIRMAR</a>
+        </button>
+    </div>
+</div>

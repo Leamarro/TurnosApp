@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+.barber-option {
+    display: flex;
+    align-items: center;
+}
+
+.barber-option img {
+    margin-left: 20%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column; /* Establecer la dirección del contenedor como columna */
+    height: 100%;
+  }
+  
+  .half h1, .half h3 {
+    font-family: "Amatic SC", sans-serif;
+    text-align: left !important; /* Alinear los títulos a la izquierda */
+    margin-left: 15px; /* Agregar un margen izquierdo para separar del borde */
+  }
+  
+  .half h1 {
+    font-size: 30px;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  .half h3 {
+    font-size: 30px;
+    position: relative;
+    font-weight: bold;
+  }
+
+  .half h1::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -10px; /* Colocar la línea debajo del título */
+    left: 9%; /* Alinear el centro de la línea con el centro del título */
+    transform: translateX(-50%); /* Mover la línea hacia la izquierda en la mitad de su ancho */
+    width: 17%; /* Ancho de la línea */
+    height: 2px; /* Altura de la línea */
+    background-color: #fff; /* Color de la línea */
+  }
+  
+  .options {
+    margin-top: 20px; /* Espacio superior para separar de título */
+    margin-left: 20%;
+    width: 80%;
+  }
+  
+  .form-check {
+    margin-bottom: 10px; /* Espacio inferior entre checkboxes */
+  }
+  
+  .title {
+    margin-bottom: 20px; /* Espacio inferior para separar los checkboxes del título */
+  }
+img {
+    margin-top: 10px;
+  }
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    width: 80%;
+    margin-top: 15px;
+  }
+
+  .contenedor {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height:5vh; /* Establecer altura del contenedor al 100% del viewport */
+}
+
+
+.boton-agregar {
+  font-family: "Amatic SC", sans-serif;
+  border: 3.5px solid white;
+  background-color: transparent;
+  color: #000;
+  padding: 5px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 25%;
+  font-weight: bold;
+}
+
+.reserva-btn{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+}
+
+.material-symbols-outlined{
+  color: #fff;
+}
+
+.form-check-label{
+  font-family: "Amatic SC", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.flecha-atras{
+  margin-top: 5%;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  margin-right: 10px; /* Espacio entre el input y el label */
+}
+
+.img-pelu{
+  width: 40px;
+  border-radius: 30px;
+}
+
+.demo-inline-calendar-card {
+  width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .demo-inline-calendar-card {
+    width: 100%; /* Establecer el ancho al 100% en dispositivos con ancho máximo de 600px (puedes ajustar este valor según tus necesidades) */
+    margin: 0; /* Eliminar cualquier margen que pueda estar presente */
+    padding: 0; /* Eliminar cualquier relleno que pueda estar presente */
+  }
+}
+
+.mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
+  margin-bottom: 0;
+  width: 65%;
+  font-family: "Amatic SC", sans-serif;
+
+}
+.mat-card {
+  background-color: transparent !important;
+  color: white !important;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 30px;
+  border: none;
+}
+.mat-calendar-body-label {
+  color: white;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 30px;
+
+}
+.mat-calendar-body-label {
+  color: white;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 30px;
+
+}
+
+.mat-calendar-body-cell-content {
+  position: absolute;
+  font-family: "Amatic SC", sans-serif;
+  color: white !important;
+  font-size: 30px;
+
+}
+::ng-deep .mat-calendar-table-header, .mat-calendar-body-label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 30px;
+
+}
+::ng-deep .mat-calendar-arrow {
+  font-family: "Amatic SC", sans-serif;
+  fill: white;
+  font-size: 30px;
+
+}
+::ng-deep .mat-calendar-body-label {
+  font-family: "Amatic SC", sans-serif;
+  height: 0;
+  line-height: 0;
+  text-align: left;
+  padding-left: 4.7142857143%;
+  padding-right: 4.7142857143%;
+  color: white;
+  font-size: 30px;
+
+}
+
+::ng-deep .mat-calendar-body-cell-content.mat-focus-indicator {
+  font-family: "Amatic SC", sans-serif;
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mat-expansion-panel {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  width: 62%;
+  margin-left: 20%;
+}
+.mat-expansion-panel-header-title, .mat-expansion-panel-header-description {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 16px;
+  align-items: center;
+  color: white;
+}
+::ng-deep .mat-expansion-indicator::after {
+  color: white;
+}
+.mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
+  background: transparent;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: inherit;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  margin: 3px;
+  border-radius: 8px;
+}
+
+::ng-deep .mat-calendar-body-cell-content.mat-selected {
+  background-color: green !important;
+  color: white !;
+}

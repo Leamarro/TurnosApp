@@ -1,0 +1,44 @@
+<router-outlet></router-outlet>
+<div class="container">
+    <a class="flecha-atras" routerLink="/barbero">
+        <span class="material-symbols-outlined">
+            arrow_back
+        </span>
+    </a>
+    <div class="half" style="margin-top: 10%;">
+        <h1 style="color: white; margin-bottom: 5px; margin-top:2px;">TURNOS</h1>
+        <div class="imagenes">
+            <img src="../img/barba.svg" alt="">
+            <img src="../assets/barba.svg" alt="">
+            <img src="../assets/peinado.svg" alt="">
+            <img src="../assets/maquinilla-de-afeitar.svg" alt="">
+            <img src="../assets/broche-del-pelo.svg" alt="">
+        </div>
+    </div>
+    <div style="margin-top: 5%;" class="half">
+        <h3 style="color: white; margin-top:15px;">ELEGI TU DIA</h3>
+        <mat-card style="display: flex; justify-content:center !important" class="demo-inline-calendar-card">
+            <mat-calendar (selectedChange)="showTimeSlots($event)"></mat-calendar>
+          </mat-card>
+          
+          <!-- Desplegable de horarios -->
+          <mat-expansion-panel *ngIf="selectedDate">
+            <mat-expansion-panel-header>
+              <mat-panel-title>Horarios disponibles</mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="horario-container">
+              <button class="horario-btn">10:00</button>
+              <button class="horario-btn">10:30</button>
+              <button class="horario-btn">11:00</button>
+              <button class="horario-btn">11:30</button>
+              <button class="horario-btn">12:00</button>
+            </div>
+          </mat-expansion-panel>
+    </div>
+    <div class="contenedor">
+        <button class="boton-agregar">
+            <span class="material-symbols-outlined">arrow_right_alt</span>
+            <a class="reserva-btn" routerLink="/datos">SIGUIENTE</a>
+        </button>
+    </div>
+</div>

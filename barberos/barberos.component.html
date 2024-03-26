@@ -1,0 +1,44 @@
+<router-outlet></router-outlet>
+<div class="container">
+    <a class="flecha-atras" href="/servicio">
+        <span class="material-symbols-outlined">
+            arrow_back
+        </span>
+    </a>
+    <div class="half" style="margin-top: 10%;">
+        <h1 style="color: white; margin-bottom: 5px; margin-top:2px;">TURNOS</h1>
+        <div class="imagenes">
+            <img src="../assets/tijeras.svg" alt="">
+            <img src="../assets/barba.svg" alt="">
+            <img src="../assets/peinado.svg" alt="">
+            <img src="../assets/maquinilla-de-afeitar.svg" alt="">
+            <img src="../assets/broche-del-pelo.svg" alt="">
+        </div>
+    </div>
+    <div style="margin-top: 25%;" class="half">
+        <h3 style="color: white; margin-top:15px;">ELEGI TU BARBERO</h3>
+        <div class="options">
+            <div class="form-check barber-option">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1" style="color: white;">
+                    Bruno
+                </label>
+                <img class="img-pelu" src="../assets/tubo.jpg" alt="Imagen de Bruno">
+            </div>
+            <div class="form-check barber-option">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2" style="color: white;">
+                    Pelu2
+                </label>
+                <img class="img-pelu" src="../assets/tubo.jpg" alt="Imagen de Bruno">
+            </div>
+        </div>
+    </div>
+    <div class="contenedor">
+        <button class="boton-agregar">
+            <span class="material-symbols-outlined">arrow_right_alt</span>
+            <a class="reserva-btn" routerLink="/turnos">SIGUIENTE</a>
+
+        </button>
+    </div>
+</div>
